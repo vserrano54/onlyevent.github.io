@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>update_password</title>
+  </head>
+  <body>
+    <input type="text" id="pagina" value="signup" />
+    <div class="fondo_login">
+      <div class="imagen">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <div class="titulo">Modificar contraseña</div>
+      <form class="login col-12">
+        <fieldset>
+          <legend>Actualizar contraseña</legend>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <p class="error" id="erroremail"></p>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label"
+              >Contraseña*
+              <span class="hide--accessibility"
+                >se solicita ingresar una nueva contraseña valida que contenga
+                una longitud de 8 caracteres minimo, al menos una letra
+                mayúscula, una letra minúscula, numeros, y un caracter como:
+                '!', '.', '@', '#','$' o '%'
+              </span>
+            </label>
+            <div class="box-eye">
+              <button type="button" id="btnMostrar">
+                <i id="eyepassword" class="fa-solid fa-eye changepassword"></i>
+              </button>
+            </div>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              id="password"
+            />
+            <p class="error" id="errorpassword"></p>
+          </div>
+          <div class="mb-3">
+            <label for="confirmapassword" class="form-label"
+              >Repite la Contraseña*
+              <span class="hide--accessibility"
+                >se solicita repetir la nueva contraseña valida que contenga una
+                longitud de 8 caracteres minimo, al menos una letra mayúscula,
+                una letra minúscula, numeros, y un caracter como: '!', '.', '@',
+                '#','$' o '%'
+              </span>
+            </label>
+            <div class="box-eye">
+              <button type="button" id="btnMostrar2">
+                <i id="eyepassword2" class="fa-solid fa-eye changepassword"></i>
+              </button>
+            </div>
+            <input
+              type="password"
+              name="confirmapassword"
+              class="form-control"
+              id="password2"
+            />
+            <p class="error" id="errorpassword2"></p>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button type="button" class="boton" id="btnLogin">
+              Crear Cuenta
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="login col-12 mt-2">
+        <a class="mx-2 px-3" href="index.html">Iniciar Sesión</a>
+        <a href="recuperarpass.html">Crear una cuenta nueva</a>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7f7949013d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/modificarpass.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="fondo_login">
+        <div class="imagen">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="titulo">
+            Crear cuente en OnlyEvent
+        </div>
+        <form class="login col-12">
+            <fieldset>
+                <legend>Datos para crear una cuenta</legend>
+            <div class="radio">
+                <div class="form-check mx-2">
+                    <input type="radio" class="form-check-input" id="rdbUsuario" name="rdbUsuario" value="usuario" checked>Usuario
+                    <span class="hide--accessibility">Permite seleccionar el tipo de cuenta usuario para crearla</span>
+                    <label class="form-check-label" for="Usuario"></label>
+                  </div>
+                  <div class="form-check mx-2">
+                    <input type="radio" class="form-check-input" id="rdbPromotor" name="rdbUsuario" value="promotor">Promotor
+                    <span class="hide--accessibility">Permite seleccionar el tipo de cuenta Promotor para crearla</span>
+                    <label class="form-check-label" for="radio2"></label>
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo
+                    <span class="hide--accessibility">se solicita ingresar el correo electronico valido, que contenga el caracter especial como '@', y los dominios '.es', '.com', '.hotmail' </span> 
+                </label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <p class="error" id="erroremail"></p>
+            </div>
+            <div class="mb-3" id="empresa">
+                <label for="nomempresa" class="form-label">Nombre Empresa
+                    <span class="hide--accessibility">se solicita ingresar el nombre de la empresa y requiere que tenga al menos 3 caracteres' </span>
+                </label>
+                <input type="text" class="form-control" id="nomempresa">
+                <p class="error" id="errornomempresa"></p>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña
+                    <span class="hide--accessibility">se solicita ingresar una contraseña valida que contenga una longitud de 8 caracteres minimo, al menos una letra mayúscula, una letra minúscula, numeros, y un caracter como: '!', '.', '@', '#','$' o '%' </span>
+                </label>
+                <div class="box-eye">
+                    <button type="button" id="btnMostrar">
+                        <i id="eyepassword" class="fa-solid fa-eye changepassword"></i>
+                    </button>
+                </div>
+                <input type="password" name="password" class="form-control" id="password">
+                <p class="error" id="errorpassword"></p>
+            </div>
+            <div class="mb-3">
+                <label for="confirmapassword" class="form-label">Repite la Contraseña
+                    <span class="hide--accessibility">se solicita repetir la contraseña, debe de contener una longitud de 8 caracteres minimo, al menos una letra mayúscula, una letra minúscula, numeros, y un caracter como: '!', '.', '@', '#','$' o '%' </span>
+                </label>
+                <div class="box-eye">
+                    <button type="button" id="btnMostrar2">
+                        <i id="eyepassword2" class="fa-solid fa-eye changepassword"></i>
+                    </button>
+                </div>
+                <input type="password" name="confirmapassword" class="form-control" id="password2">
+                <p class="error" id="errorpassword2"></p>
+            </div>      
+            <div class="d-grid gap-2">
+                <button type="button" class="boton" id="btnLogin">Crear Cuenta
+                    <span class="hide--accessibility">Boton para crear una cuenta nueva, puede ser cuenta de usuario para asistir a los eventos o cuenta de promotor</span>    
+                </button>
+                </button>
+            </div>
+          </form>
+          <div>
+            <div class="login col-12 mt-2 d-inline-flex">
+                <a class="mx-2 px-3"  href="index.html">Iniciar Sesión</a>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkCondicion">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <a href="condiciones-uso.html">Condiciones de uso</a>
+                    </label>
+                </div>
+              </div>
+              <p class="error" id="infocondicion"></p>
+          </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f7949013d.js" crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>

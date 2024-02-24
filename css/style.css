@@ -1,0 +1,55 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+h1 {
+    color: #ffc107;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.centradoCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.roboto-font {
+    /* He elegido esta fuente para cambiar un poco, pero ya elegiremos una que no convenza a todos */
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+}
+
+.ocultarSelect {
+    display: none !important;
+}
+
+.colorEstrellas{
+    color:#0d6efd;
+}
+
+.colorEstrellaPintada{
+    color: #ffc107;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* para que las tarjetas pasen por debajo se usa un z-index grande */
+    z-index: 900; 
+}
+
+.anchoSelect{
+    width: 255px;
+}
+

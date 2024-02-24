@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>recover_password</title>
+</head>
+<body>
+    <input type="text" id="pagina" value="recuperarpass">
+
+ 
+
+    <div class="fondo_login">
+        <div class="imagen">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="titulo">
+            Recuperar contraseña - OnlyEvent
+        </div>
+
+        <form class="login col-12">
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo
+                    <span class="hide--accessibility">se solicita ingresar el correo electronico valido, que contenga el caracter especial como '@', y los dominios '.es', '.com', '.hotmail' </span>
+                </label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <p class="error" id="erroremail"></p>
+            </div>
+
+           
+          
+            <div class="d-grid gap-2">
+                <button type="button" class="boton" id="btnRecuperar" >Aceptar</button>
+            </div>
+          </form>
+          <div class="login col-12 mt-2">
+            <a class="mx-2" href="signup.html">Crete una cuenta</a> <a href="index.html">Iniciar sesión</a>
+          </div>
+            
+
+    </div>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f7949013d.js" crossorigin="anonymous"></script>
+    <script src="js/recuperarpass.js"></script>
+</body>
+</html>
